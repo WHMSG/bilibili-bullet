@@ -46,6 +46,7 @@ pip install bilibili-api-python aiohttp curl_cffi httpx
 打开脚本文件 bilibili_danmaku_tool.py，找到 ACCOUNTS 列表，按如下格式填入你的账号信息（可添加多个账号）：
 
 python
+```
 ACCOUNTS = [
     {
         "name": "账号1昵称",                     # 任意标识名
@@ -60,6 +61,7 @@ ACCOUNTS = [
         "buvid3": "另一个账号的buvid3",
     },
 ]
+```
 3. 配置直播间及前后缀
 找到 ROOMS 字典，按如下格式添加你常去的直播间，并可为每个直播间设置独立的 prefix（前缀）和 suffix（后缀）：
 
@@ -81,13 +83,13 @@ suffix：发送弹幕时自动添加的后缀（可留空）
 在脚本顶部的配置区域：
 
 python
-# 循环发送时的弹幕列表（每条弹幕会循环发送）
+循环发送时的弹幕列表（每条弹幕会循环发送）
 MULTIPLE_MESSAGES = ["弹幕1", "弹幕2", "弹幕3"]
 
-# 循环发送时的随机延迟范围（秒），支持小数
+循环发送时的随机延迟范围（秒），支持小数
 DEFAULT_INTERVAL_RANGE = (5, 6)  # 最小值, 最大值
 
-# 当遇到频率过快错误（10030/10031）时的等待时间（秒）
+当遇到频率过快错误（10030/10031）时的等待时间（秒）
 RATE_LIMIT_WAIT = 1
 
 
