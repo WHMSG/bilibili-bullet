@@ -2,7 +2,7 @@
 此代码用于B站直播间弹幕发送测试，仅供学习Python异步编程与B站API调用。禁止用于违反B站社区规则或法律法规的行为，使用者需自行承担违规后果。   This code is for testing bilibili live danmaku sending. For learning Python async and B站 API only. Do not violate bilibili rules or laws. Users bear all consequences.
 
 
-# B站直播弹幕自动发送工具（多账号，按直播间独立前后缀）
+# B站直播弹幕自动发送工具
 
 本工具基于 `bilibili-api-python` 开发，支持**每个直播间独立设置前后缀**，并具备自动重试、频率限制处理等功能。
 
